@@ -1,9 +1,9 @@
 "use client"; //for next-app
 
-export default function Button() {
-    const buttonName: string = 'Hello';
+export default function Button(props: any) {
+    // const buttonName: string = 'Hello';
     const buttonStyle = {
-        backgroundColor: 'red',
+        backgroundColor: props.color,
         color: 'white'
     };
     const handleClick = () => {
@@ -12,7 +12,7 @@ export default function Button() {
 
     return (
         <button onClick={handleClick} style={buttonStyle}>
-            {buttonName}
+            {props.name}
         </button>
     );
 }

@@ -1,5 +1,5 @@
-export default function Tasks() {
+export default function Tasks(props: any) {
     return (
-        <h1>Hello World....</h1>
+        <h1>{props.data}</h1>
     )
   }
